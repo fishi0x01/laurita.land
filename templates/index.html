@@ -2,10 +2,151 @@
 <html>
 <head>
 <meta charset="utf-8">
+<title>Laurita Surprise Tours</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/jquery.quiz-min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-        Nothing to see here today. But check in another time :)
-</body>
 
+<div class="fireworks" style="position:absolute; z-index:-100;"></div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="/static/jquery.quiz-min.js"></script>
+
+<div class="container">
+  <div class="row" style="height:100px;"></div>
+  <div class="jumbotron vertical-center" style="z-index:100;">
+    <div class="container text-center">
+      <div class="row">
+        <br/>
+        <div class="col-md-12">
+
+          <div id="quiz">
+            <div id="quiz-start-screen">
+                    Quizz Time!<br/><br/>
+              <div><a href="#" id="quiz-start-btn" class="quiz-button">Begin Authentication</a></div>
+            </div>
+            <div id="quiz-results-screen">
+                    Tischreservierung ist um:<br/>
+                    <pre>6, 10, 7, 11, 8, 12, ... ?</pre>
+              <br/>
+              <br/>
+            </div>
+            <div id="quiz-gameover-screen">
+              <p id="quiz-gameover-response"></p>
+              <p><a href="#" id="quiz-retry-btn" class="quiz-button">Retry Authentication</a></p>
+            </div>
+          </div>
+
+        </div>
+        <br/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$('#quiz').quiz({
+  allowIncorrect: false,
+  questions: [
+    {
+      'q': 'Unter welchen Umständen darf von den geltenden Bestimmungen über das Verhalten im Verkehr auf den Binnenschifffahrtsstraßen abgewichen werden?',
+      'options': [
+        'Bei mittelbar drohender Gefahr für sich oder andere.',
+        'Bei unmittelbar bevorstehender Begegnung.',
+        'Bei unmittelbar bevorstehendem Überholvorgang.',
+        'Bei unmittelbar drohender Gefahr für sich oder andere.'
+      ],
+      'correctIndex': 3,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
+    },
+    {
+      'q': ' Was versteht man unter \'Fahrwasser\'?',
+      'options': [
+        'Es ist der Teil der Wasserstraße, deren Tiefe bei 2,50 m und mehr beginnt.',
+        'Den Teil der Wasserstraße, der den örtlichen Umständen nach vom durchgehenden Schiffsverkehr benutzt wird.',
+        'Den Teil der Wasserstraße, in dem für den durchgehenden Schiffsverkehr bestimmte Breiten und Tiefen vorgehalten bzw. angestrebt werden.',
+        'Es ist der Teil der Wasserstraße, der durch die Ufer begrenzt ist.'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Was bedeutet dieses Schallsignal? (— •) ',
+      'options': [
+        'Kursänderung über Steuerbord.',
+        'Wenden über Backbord.',
+        'Wenden über Steuerbord.',
+        'Kursänderung nach Backbord.'
+      ],
+      'correctIndex': 2,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
+    },
+    {
+      'q': '[LotR] Wie viele "große Ringe" gab es ursprünglich?',
+      'options': [
+        '7',
+        '13',
+        '20'
+      ],
+      'correctIndex': 2,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
+    },
+    {
+      'q': '[LotR] Wer gehört nicht zur Gemeinschaft des Rings?',
+      'options': [
+        'Boromir',
+        'Faramir',
+        'Gimli'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
+    },
+    {
+      'q': '[LotR] Wie heißt der Turm in dem Saruman lebt?',
+      'options': [
+        'Orthanc',
+        'Isengart',
+        'Argonath'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
+    },
+    {
+      'q': '[LotR] Wie hieß Aragorns Vater?',
+      'options': [
+        'Denethor',
+        'Arathorn',
+        'Celeborn'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Was ist die optimale Aufstehzeit an einem Samstag Morgen?',
+      'options': [
+        '6.00 Uhr',
+        '7.00 Uhr',
+        '8.00 Uhr',
+        '9.00 Uhr'
+      ],
+      'correctIndex': 2,
+      'correctResponse': 'Eigentlich ist es 9.00 Uhr. Aber wir wollen mal kompromissbereit sein ;)',
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
+    }
+  ]
+});
+</script>
+
+</body>
