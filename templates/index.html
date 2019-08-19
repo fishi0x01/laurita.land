@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Laurita Surprise Tours</title>
+<title>Happy Birthday Laurita</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="/static/jquery.quiz-min.css">
@@ -15,6 +15,7 @@
 <div class="fireworks" style="position:absolute; z-index:-100;"></div>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="/static/jquery.fireworks.js"></script>
 <script src="/static/jquery.quiz-min.js"></script>
 
 <div class="container">
@@ -27,14 +28,11 @@
 
           <div id="quiz">
             <div id="quiz-start-screen">
-                    Jedes Date will verdient sein!<br/><br/>
+              <h1>Happy Birthday Laurita!</h1>
               <div><a href="#" id="quiz-start-btn" class="quiz-button">Begin Authentication</a></div>
             </div>
             <div id="quiz-results-screen">
-                    Dress Code am Mittwoch:<br/>
-                    <img src="https://pioneerwoman.files.wordpress.com/2016/08/how-to-make-ice-cream-cookie-sandwiches-20.jpg" height="250" width="250">
-              <br/>
-              <br/>
+                    Du dachtest bestimmt "Hey, das war ja so einfach!". Aber wir sind auch noch nicht ganz fertig :) Nenne Karl die Lösung für den Fragebogenen zur Wiener Facharztprüfung Radiologie (bei Karl auf dem Laptop). Danach gibts Geschenke!
             </div>
             <div id="quiz-gameover-screen">
               <p id="quiz-gameover-response"></p>
@@ -50,108 +48,121 @@
 </div>
 
 <script>
+$('.fireworks').fireworks({ sound: false, opacity: 1.0, width: '100%', height: '100%' });
+
 $('#quiz').quiz({
   allowIncorrect: false,
   questions: [
     {
-      'q': 'What is the capital of South Korea?',
+      'q': '[LotR] Wie viele "große Ringe" gab es ursprünglich?',
       'options': [
-        'Seoul',
-        'Beijing',
-        'Pyongyang',
-        'Tokyo'
-      ],
-      'correctIndex': 0,
-      'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
-    },
-    {
-      'q': 'What is the 2nd biggest urban area of South Korea?',
-      'options': [
-        'Daejon',
-        'Gwangju',
-        'Busan',
-        'Daegu'
+        '1',
+        '13',
+        '20',
+        '23'
       ],
       'correctIndex': 2,
       'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Which Korean\'s dish name means \"mixed rice\"',
+      'q': '[LotR] In welchem Land wurde "Der Herr der Ringe" gedreht?',
       'options': [
-        'Bulgogi',
-        'Bibimbap',
-        'Galbijjim',
-        'Yukhoe'
+        'Australien',
+        'Neuseeland',
+        'Neufundland',
+        'Japan'
       ],
       'correctIndex': 1,
       'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
     },
     {
-      'q': 'What is the name of the Korean currency?',
+      'q': '[LotR] Wie heißt die Frau von Tom Bombadil?',
       'options': [
-        'Won',
-        'Wan',
-        'Bim',
-        'Bam'
+        'Goldbeere',
+        'Silbermond',
+        'Morgenstern',
+        'Petra'
       ],
       'correctIndex': 0,
       'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
     },
     {
-      'q': 'What is the name of the Sea to the east of Korea?',
+      'q': '[LotR] Was bedeutet das elbische Wort "Mellon", das den Helden die Pforten von Moria öffnet?',
       'options': [
-        'East China Sea',
-        'Yellow Sea',
-        'South China Sea',
-        'Sea of Japan'
-      ],
-      'correctIndex': 3,
-      'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
-    },
-    {
-      'q': 'What is the name of the Sea to the west of Korea?',
-      'options': [
-        'South China Sea',
-        'Yellow Sea',
-        'East China Sea',
-        'Philippine Sea'
+        'Öffne dich',
+        'Freund',
+        'Frieden',
+        'Musik'
       ],
       'correctIndex': 1,
       'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
     },
     {
-      'q': 'What is the 2nd highest mountain in South Korea?',
+      'q': '[LotR] Wer gehört nicht zur Gemeinschaft des Rings?',
       'options': [
-        'Jirisan',
-        'Seoraksan',
-        'Bukhansan',
-        'Songnisan'
+        'Boromir',
+        'Faramir',
+        'Gimli',
+        'Legolas'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
+    },
+    {
+      'q': '[LotR] Wie heißt der Turm in dem Saruman lebt?',
+      'options': [
+        'Orthanc',
+        'Isengart',
+        'Argonath',
+        'Walrog'
       ],
       'correctIndex': 0,
       'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
     },
     {
-      'q': 'What is the most accessible mountain in the north of Seoul?',
+      'q': '[LotR] Wie hieß Aragorns Vater?',
       'options': [
-        'Hallasan',
-        'Seoraksan',
-        'Bukhansan',
-        'Songnisan'
+        'Denethor',
+        'Arathorn',
+        'Celeborn',
+        'Ronagan'
       ],
-      'correctIndex': 2,
+      'correctIndex': 1,
       'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
+    },
+    {
+      'q': '[LotR] Wie heißt der König der Rohirrim, der vom Herrn der Nazgzûl getötet wird?',
+      'options': [
+        'Theoden',
+        'Theodred',
+        'Thror',
+        'Throril'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
+    },
+    {
+      'q': '[Medizin] ',
+      'options': [
+        'Theoden',
+        'Theodred',
+        'Thror',
+        'Throril'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Laurita hätte das gewusst!'
     }
   ]
 });
 </script>
 
 </body>
-
