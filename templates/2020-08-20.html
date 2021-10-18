@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Laurita Surprise Tours</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/jquery.quiz-min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="fireworks" style="position:absolute; z-index:-100;"></div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="/static/jquery.quiz-min.js"></script>
+
+<div class="container">
+  <div class="row" style="height:100px;"></div>
+  <div class="jumbotron vertical-center" style="z-index:100;">
+    <div class="container text-center">
+      <div class="row">
+        <br/>
+        <div class="col-md-12">
+
+          <div id="quiz">
+            <div id="quiz-start-screen">
+                    Burzelzeit!<br/><br/>
+              <div><a href="#" id="quiz-start-btn" class="quiz-button">Begin Authentication</a></div>
+            </div>
+            <div id="quiz-results-screen">
+                   Wie wäre es mit einem Ausflug in Cookies Cream?
+              <br/>
+              <br/>
+            </div>
+            <div id="quiz-gameover-screen">
+              <p id="quiz-gameover-response"></p>
+              <p><a href="#" id="quiz-retry-btn" class="quiz-button">Retry Authentication</a></p>
+            </div>
+          </div>
+
+        </div>
+        <br/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$('#quiz').quiz({
+  allowIncorrect: false,
+  questions: [
+    {
+      'q': 'What is Iceland\'s most popular road trip called?',
+      'options': [
+        'The diamond circle',
+        'The golden circle',
+        'The ring road',
+        'The viking tour'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'If you order Hakarl in a restaurant, what will you get?',
+      'options': [
+        'A hot dog',
+        'Smoked lamb',
+        'Fermented shark',
+        'Fish & chips'
+      ],
+      'correctIndex': 2,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'What word does not originate from the Icelandic language?',
+      'options': [
+        'Fellow',
+        'Berserk',
+        'Window',
+        'Elves'
+      ],
+      'correctIndex': 3,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Roughly, when did Vikings start to settle in Iceland?',
+      'options': [
+        'Around 850',
+        '1200 BC',
+        'Around 1300',
+        'Around 1600'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Who discovered America?',
+      'options': [
+        'Christopher Columbus',
+        'Marco Polo',
+        'Leifur Eriksson aka Leifur the Lucky'
+      ],
+      'correctIndex': 2,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'What\'s the name of Iceland\'s biggest music festival?',
+      'options': [
+        'Secret Solstice',
+        'Iceland Airwaves',
+        'Secret Airwaves',
+        'Iceland Solstice'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'If you visit Baejarins beztu, what are you most likely to get?',
+      'options': [
+        'A cold',
+        'A headache',
+        'A hot dog',
+        'A fine'
+      ],
+      'correctIndex': 2,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'If you are driving on an F-road, where are you most likely driving?',
+      'options': [
+        'A mountain road',
+        'In the water',
+        'In the Westfjords'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'How many people live in Iceland?',
+      'options': [
+        '3 million',
+        '340.000',
+        '1.3 million'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Iceland gained its independance in 1944 but from whom?',
+      'options': [
+        'Sweden',
+        'Norway',
+        'Greenland',
+        'Denmark'
+      ],
+      'correctIndex': 3,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'If you walk across the Arctic circle in Iceland, where do you find yourself?',
+      'options': [
+        'Grimsey',
+        'Westman islands',
+        'Papey',
+        'Hornstrandir in the Westfjords'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Whats the name of the famous volcano that stopped air traffic in Europe in 2010?',
+      'options': [
+        'Esjafjallajökull',
+        'Eyjafjallajökull',
+        'Vatnajökull',
+        'Hekla'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    }
+  ]
+});
+</script>
+
+</body>
+
