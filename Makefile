@@ -5,6 +5,6 @@ run-local-dev:
 
 venv:
 	rm -rf venv || true
-	python -m venv venv
+	python3 -m venv venv
 	. ./venv/bin/activate && pip install --upgrade pip
 	. ./venv/bin/activate && pip install -r requirements.txt
