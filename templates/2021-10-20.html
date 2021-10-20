@@ -27,11 +27,11 @@
 
           <div id="quiz">
             <div id="quiz-start-screen">
-                    Mittwochsquizz - Vorsicht, Schwer!<br/><br/>
+                    Montagsquizz<br/><br/>
               <div><a href="#" id="quiz-start-btn" class="quiz-button">Begin Authentication</a></div>
             </div>
             <div id="quiz-results-screen">
-                    Lust auf <a href="https://www.berlin.de/tickets/suche/?q=&categories%5B%5D=Oper&categories%5B%5D=Theater&date=2021-10-21T22%3A00%3A00.000Z%2C2021-10-21T22%3A00%3A00.000Z&order_by=start#ems-searchresults-anchor">Kultur</a> am Freitag?
+                   Wie wäre es mit Koreanisch heute?
               <br/>
               <br/>
             </div>
@@ -53,36 +53,84 @@ $('#quiz').quiz({
   allowIncorrect: false,
   questions: [
     {
-      'q': 'Welche Augenfarbe hat Horace Slughorn?',
+      'q': '[Wandern] Welchen Stein sucht man vergeblich?',
       'options': [
-        'Dunkl johannisfarben',
-        'Strunkelbeerfarben',
-        'Hell stachelbeerfarben',
-        'Hell stichelbeerfarben'
+        'Papststein',
+        'Lilienstein',
+        'Abtstein',
+        'Königstein'
       ],
       'correctIndex': 2,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Wieviele Galleonen bekommt Voldemorts Mutter für das Medaillon von Slytherin, als sie es verkauft?',
+      'q': '[Wandern] Wie viele Einwohner hat Bad Schandau?',
       'options': [
-        '10 Galleonen',
-        '20 Galleonen',
-        '15 Galleonen',
-        '5 Galleonen'
+        '500',
+        '3000',
+        '10000',
+        '50000'
       ],
-      'correctIndex': 0,
+      'correctIndex': 1,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Welcher Lehrer erzählt von der Kammer des Schreckens?',
+      'q': '[Wandern] Die Schrammsteine liegen ... von Bad Schandau.',
       'options': [
-        'Pomona Sprout',
-        'Wilhelmina Reue-Pritsche',
-        'Cuthbert Binns',
-        'Ronalder Hooch'
+        'Noerdlich',
+        'Oestlich',
+        'Suedlich',
+        'Westlich'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': '[Harry Potter] Mit wem ist Percy Weasley im 2. Teil heimlich zusammen?',
+      'options': [
+        'Alicia Spinnet',
+        'Romilda Vane',
+        'Perenelle Flamel',
+        'Penelope Clearwater'
+      ],
+      'correctIndex': 3,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': '[Harry Potter] Wie lautet die Zauberformel, die Türen verschließt?',
+      'options': [
+        'Chiusus',
+        'Colloportus',
+        'Cuportus',
+        'Coportus'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': '[Harry Potter] Wie heißt der Liebesratgeber, den Ron Harry zum 17. Geburtstag schenkt?',
+      'options': [
+        'Liebesschwuere fuer Dummies',
+        'Zwoelf narrensichere Methoden, Hexen zu bezaubern',
+        'Zaubermanns Liebes-Einmaleins',
+        'Gilderoy Lockhards Ratgeber: Hexen verzaubern'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': '[Harry Potter] Mit was für Tieren hat Hagrid seine erste Schulstunde in Band 3 begonnen?',
+      'options': [
+        'Flubberwuermer',
+        'Drachen',
+        'Hippogreife',
+        'Saurueden'
       ],
       'correctIndex': 2,
       'correctResponse': 'Richtig :)',
