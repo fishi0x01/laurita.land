@@ -27,17 +27,18 @@
 
           <div id="quiz">
             <div id="quiz-start-screen">
-                    Mittwochsquizz - Vorsicht, Schwer!<br/><br/>
-              <div><a href="#" id="quiz-start-btn" class="quiz-button">Begin Authentication</a></div>
+                    Osterquizz!<br/><br/>
+              <div><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></div>
             </div>
             <div id="quiz-results-screen">
-                    Lust auf <a href="https://www.berlin.de/tickets/suche/?q=&categories%5B%5D=Oper&categories%5B%5D=Theater&date=2021-10-21T22%3A00%3A00.000Z%2C2021-10-21T22%3A00%3A00.000Z&order_by=start#ems-searchresults-anchor" style="color: blue">Kultur</a> am Freitag?
+                    <img src="/static/niffler.png" height="300"> </br>
+                    Wir sind bereit für Südafrika!
               <br/>
               <br/>
             </div>
             <div id="quiz-gameover-screen">
               <p id="quiz-gameover-response"></p>
-              <p><a href="#" id="quiz-retry-btn" class="quiz-button">Retry Authentication</a></p>
+              <p><a href="#" id="quiz-retry-btn" class="quiz-button">Neuer Versuch</a></p>
             </div>
           </div>
 
@@ -53,40 +54,101 @@ $('#quiz').quiz({
   allowIncorrect: false,
   questions: [
     {
-      'q': 'Welche Augenfarbe hat Horace Slughorn?',
+      'q': 'Was sind die Big 5?',
       'options': [
-        'Dunkl johannisfarben',
-        'Strunkelbeerfarben',
-        'Hell stachelbeerfarben',
-        'Hell stichelbeerfarben'
+        'Offenheit, Gewissenhaftigkeit, Extroversion, Verträglichkeit, Neurotizismus',
+        'Elefant, Nashorn, Büffel, Löwe, Leopard',
+        'Elefant, Nashorn, Niffler, Löwe, Leopard'
       ],
-      'correctIndex': 2,
+      'correctIndex': 1,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Wieviele Galleonen bekommt Voldemorts Mutter für das Medaillon von Slytherin, als sie es verkauft?',
+      'q': 'Wo findet man die Big 5?',
       'options': [
-        '10 Galleonen',
-        '20 Galleonen',
-        '15 Galleonen',
-        '5 Galleonen'
+        'Kruger Nationalpark',
+        'Bontebok National Park'
       ],
       'correctIndex': 0,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Welcher Lehrer erzählt von der Kammer des Schreckens?',
+      'q': 'Wie kommt man am Besten zum Kruger Nationalpark?',
       'options': [
-        'Pomona Sprout',
-        'Wilhelmina Reue-Pritsche',
-        'Cuthbert Binns',
-        'Ronalder Hooch'
+        'Flug von Johannesburg zur Lodge',
+        'Auto'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Was ist Baobab?',
+      'options': [
+        'Ein Gericht',
+        'Eine Gazellenart',
+        'Ein Baum'
       ],
       'correctIndex': 2,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Gibt es Baobab auch im Kruger?',
+      'options': [
+        'Natürlich',
+        'Nein'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Was ist Chakalaka?',
+      'options': [
+        'Ein Gericht',
+        'Eine Gazellenart',
+        'Noch ein Baum'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Wie heißt die südafrikanische Währung?',
+      'options': [
+        'ZAR (South African Rand)',
+        'ZR (South African Rand)',
+        'AR (South African Rand)'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig - Abkürzung ist auch R :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Wieviel ZAR kann man aktuell für einen Euro erniffeln?',
+      'options': [
+        '3',
+        '16',
+        '112'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Ein Niffler hätte das gewusst!'
+    },
+    {
+      'q': 'Wieviel ZAR sollten wir pro Nacht für 2 Personen im Kruger einplanen?',
+      'options': [
+        '~500',
+        '~2000',
+        '~6000',
+        '~10000'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Ein Niffler hätte das gewusst!'
     }
   ]
 });
