@@ -15,7 +15,8 @@
 <div class="fireworks" style="position:absolute; z-index:-100;"></div>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="/static/jquery.quiz-min.js"></script>
+<script src="/static/jquery.fireworks.js"></script>
+<script src="/static/jquery.quiz.js"></script>
 
 <div class="container">
   <div class="row" style="height:100px;"></div>
@@ -27,12 +28,14 @@
 
           <div id="quiz">
             <div id="quiz-start-screen">
-                    Osterquizz!<br/><br/>
+                    <h1>Geburtstagsquizz<h1/><br/><br/>
               <div><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></div>
             </div>
             <div id="quiz-results-screen">
-                    <img src="/static/niffler.png" height="300"> </br>
-                    Wir sind bereit für Südafrika! 
+                    <img src="/static/niffler.png" width="300"> </br>
+                    Du hast ausreichend Fragen richtig beantwortet! 
+                    Zur Belohnung gibt es etwas, um mehr Pflanzen zu niffeln! <br>
+                    <img src="https://user-images.githubusercontent.com/10799507/184883632-0079b310-3d5d-4836-884a-6ebecdc3924c.jpg" width="300">
               <br/>
               <br/>
             </div>
@@ -50,105 +53,122 @@
 </div>
 
 <script>
+$('.fireworks').fireworks({ sound: false, opacity: 1.0, width: '100%', height: '100%' });
+
 $('#quiz').quiz({
-  allowIncorrect: false,
+  allowIncorrect: true,
+  allowedMisses: 2,
   questions: [
     {
-      'q': 'Was sind die Big 5?',
+      'q': 'Wie bezeichnet man eine Sammlung getrockneter Pflanzen auf einem Papierbogen?',
       'options': [
-        'Offenheit, Gewissenhaftigkeit, Extroversion, Verträglichkeit, Neurotizismus',
-        'Elefant, Nashorn, Büffel, Löwe, Leopard',
-        'Elefant, Nashorn, Niffler, Löwe, Leopard'
+        'Pflanzenkasten',
+        'Herbarium',
+        'Biosphäre',
+        'Botanische Blütenhülle'
       ],
       'correctIndex': 1,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Wo findet man die Big 5?',
+      'q': 'Welches Blatt erkennen Sie hier?',
+      'imageSrc': 'https://user-images.githubusercontent.com/10799507/184651090-14c6f3e5-cf2c-4b2d-afeb-80103e120ec2.jpg',
+      'imageWidth': 300,
       'options': [
-        'Kruger Nationalpark',
-        'Bontebok National Park'
-      ],
-      'correctIndex': 0,
-      'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
-    },
-    {
-      'q': 'Wie kommt man am Besten zum Kruger Nationalpark?',
-      'options': [
-        'Flug von Johannesburg zur Lodge',
-        'Auto'
-      ],
-      'correctIndex': 0,
-      'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
-    },
-    {
-      'q': 'Was ist Baobab?',
-      'options': [
-        'Ein Gericht',
-        'Eine Gazellenart',
-        'Ein Baum'
+        'Buche',
+        'Espe',
+        'Linde',
+        'Birke'
       ],
       'correctIndex': 2,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Gibt es Baobab auch im Kruger?',
+      'q': 'Um welches Blatt könnte es sich hierbei handeln?',
+      'imageSrc': 'https://user-images.githubusercontent.com/10799507/184652189-a6e92a68-bca2-4a25-8b33-84ac08c15571.jpg',
+      'imageWidth': 300,
       'options': [
-        'Natürlich',
-        'Nein'
+        'Phylliidae',
+        'Philodendron',
+        'Köstliches Fensterblatt',
+        'Anthurium magnificum'
       ],
       'correctIndex': 0,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Was ist Chakalaka?',
+      'q': 'Orchideen gelten als besonders beliebt. Wie viele Arten gibt es ungefähr von der "Königin der Blumen"?',
       'options': [
-        'Ein Gericht',
-        'Eine Gazellenart',
-        'Noch ein Baum'
+        '30',
+        '300',
+        '3000',
+        '30000'
+      ],
+      'correctIndex': 3,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Was ist das?',
+      'imageSrc': 'https://user-images.githubusercontent.com/10799507/184659855-0f663b25-3226-49ef-8dd3-b90edd101dff.jpg',
+      'imageWidth': 300,
+      'options': [
+        'Ringelblume',
+        'Aster',
+        'Geranie'
       ],
       'correctIndex': 0,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Wie heißt die südafrikanische Währung?',
+      'q': 'Welche dieser Pflanzen hilft gegen Mücken?',
       'options': [
-        'ZAR (South African Rand)',
-        'ZR (South African Rand)',
-        'AR (South African Rand)'
+        'Kamille',
+        'Flieder',
+        'Rosmarin'
       ],
-      'correctIndex': 0,
-      'correctResponse': 'Richtig - Abkürzung ist auch R :)',
+      'correctIndex': 2,
+      'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Wieviel ZAR kann man aktuell für einen Euro erniffeln?',
+      'q': 'Was ist aus gärtnerischer Sicht kein Obst?',
       'options': [
-        '3',
-        '16',
-        '112'
+        'Weintrauben',
+        'Kirschen',
+        'Kürbis'
       ],
-      'correctIndex': 1,
+      'correctIndex': 2,
       'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Ein Niffler hätte das gewusst!'
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Wieviel ZAR sollten wir pro Nacht für 2 Personen im Kruger einplanen?',
+      'q': 'Welche Pflanze wächst am schnellsten?',
       'options': [
-        '~500',
-        '~2000',
-        '~6000',
-        '~10000'
+        'Bambus',
+        'Kirschlorbeer',
+        'Rose'
       ],
-      'correctIndex': 1,
+      'correctIndex': 0,
       'correctResponse': 'Richtig :)',
-      'incorrectResponse': 'Oh no. Ein Niffler hätte das gewusst!'
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Welche Pflanze trägt diese außergewöhnlichen Blüten?',
+      'imageSrc': 'https://user-images.githubusercontent.com/10799507/185610353-af0bd95e-2221-4d57-982b-277fabc23682.jpg',
+      'imageWidth': 300,
+      'options': [
+        'Akelei',
+        'Storchschnabel',
+        'Kapuzinerkresse'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     }
   ]
 });

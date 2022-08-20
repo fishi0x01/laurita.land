@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Laurita Surprise Tours</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/jquery.quiz-min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div class="fireworks" style="position:absolute; z-index:-100;"></div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="/static/jquery.quiz-min.js"></script>
+
+<div class="container">
+  <div class="row" style="height:100px;"></div>
+  <div class="jumbotron vertical-center" style="z-index:100;">
+    <div class="container text-center">
+      <div class="row">
+        <br/>
+        <div class="col-md-12">
+
+          <div id="quiz">
+            <div id="quiz-start-screen">
+                    Osterquizz!<br/><br/>
+              <div><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></div>
+            </div>
+            <div id="quiz-results-screen">
+                    <img src="/static/niffler.png" height="300"> </br>
+                    Wir sind bereit für Südafrika! 
+              <br/>
+              <br/>
+            </div>
+            <div id="quiz-gameover-screen">
+              <p id="quiz-gameover-response"></p>
+              <p><a href="#" id="quiz-retry-btn" class="quiz-button">Neuer Versuch</a></p>
+            </div>
+          </div>
+
+        </div>
+        <br/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$('#quiz').quiz({
+  allowIncorrect: false,
+  questions: [
+    {
+      'q': 'Was sind die Big 5?',
+      'options': [
+        'Offenheit, Gewissenhaftigkeit, Extroversion, Verträglichkeit, Neurotizismus',
+        'Elefant, Nashorn, Büffel, Löwe, Leopard',
+        'Elefant, Nashorn, Niffler, Löwe, Leopard'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Wo findet man die Big 5?',
+      'options': [
+        'Kruger Nationalpark',
+        'Bontebok National Park'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Wie kommt man am Besten zum Kruger Nationalpark?',
+      'options': [
+        'Flug von Johannesburg zur Lodge',
+        'Auto'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Was ist Baobab?',
+      'options': [
+        'Ein Gericht',
+        'Eine Gazellenart',
+        'Ein Baum'
+      ],
+      'correctIndex': 2,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Gibt es Baobab auch im Kruger?',
+      'options': [
+        'Natürlich',
+        'Nein'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Was ist Chakalaka?',
+      'options': [
+        'Ein Gericht',
+        'Eine Gazellenart',
+        'Noch ein Baum'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Wie heißt die südafrikanische Währung?',
+      'options': [
+        'ZAR (South African Rand)',
+        'ZR (South African Rand)',
+        'AR (South African Rand)'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig - Abkürzung ist auch R :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Wieviel ZAR kann man aktuell für einen Euro erniffeln?',
+      'options': [
+        '3',
+        '16',
+        '112'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Ein Niffler hätte das gewusst!'
+    },
+    {
+      'q': 'Wieviel ZAR sollten wir pro Nacht für 2 Personen im Kruger einplanen?',
+      'options': [
+        '~500',
+        '~2000',
+        '~6000',
+        '~10000'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Ein Niffler hätte das gewusst!'
+    }
+  ]
+});
+</script>
+
+</body>
+
