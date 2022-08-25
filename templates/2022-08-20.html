@@ -28,13 +28,14 @@
 
           <div id="quiz">
             <div id="quiz-start-screen">
-                    <h1>Quizzzeit<h1/><br/><br/>
+                    <h1>Geburtstagsquizz<h1/><br/><br/>
               <div><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></div>
             </div>
             <div id="quiz-results-screen">
                     <img src="/static/niffler.png" width="300"> </br>
-                    Darf der Strandmeister um den nächsten Tanz bitten?<br>
-                    <img src="https://user-images.githubusercontent.com/10799507/186708252-6b73f792-20fd-43cd-9552-a4655bd6b0ad.png" width="300">
+                    Du hast ausreichend Fragen richtig beantwortet! 
+                    Zur Belohnung gibt es etwas, um mehr Pflanzen zu niffeln! <br>
+                    <img src="https://user-images.githubusercontent.com/10799507/184883632-0079b310-3d5d-4836-884a-6ebecdc3924c.jpg" width="300">
               <br/>
               <br/>
             </div>
@@ -56,69 +57,114 @@ $('.fireworks').fireworks({ sound: false, opacity: 1.0, width: '100%', height: '
 
 $('#quiz').quiz({
   allowIncorrect: true,
-  allowedMisses: 0,
+  allowedMisses: 2,
   questions: [
     {
-      'q': 'Welcher Tanz kommt nicht aus Brasilien?',
+      'q': 'Wie bezeichnet man eine Sammlung getrockneter Pflanzen auf einem Papierbogen?',
       'options': [
-        'Lambada',
-        'Mambo',
-        'Samba'
+        'Pflanzenkasten',
+        'Herbarium',
+        'Biosphäre',
+        'Botanische Blütenhülle'
       ],
       'correctIndex': 1,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Gitarrenmusik und Kastagnetten sind typisch für welchen Tanz?',
+      'q': 'Welches Blatt erkennen Sie hier?',
+      'imageSrc': 'https://user-images.githubusercontent.com/10799507/184651090-14c6f3e5-cf2c-4b2d-afeb-80103e120ec2.jpg',
+      'imageWidth': 300,
       'options': [
-        'Flamenco',
-        'Stepptanz',
-        'Sirtaki'
+        'Buche',
+        'Espe',
+        'Linde',
+        'Birke'
+      ],
+      'correctIndex': 2,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Um welches Blatt könnte es sich hierbei handeln?',
+      'imageSrc': 'https://user-images.githubusercontent.com/10799507/184652189-a6e92a68-bca2-4a25-8b33-84ac08c15571.jpg',
+      'imageWidth': 300,
+      'options': [
+        'Phylliidae',
+        'Philodendron',
+        'Köstliches Fensterblatt',
+        'Anthurium magnificum'
       ],
       'correctIndex': 0,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Wie viele Kalorien verbrennt eine 50 Kilo leichte Frau, wenn sie eine Stunde tanzt?',
+      'q': 'Orchideen gelten als besonders beliebt. Wie viele Arten gibt es ungefähr von der "Königin der Blumen"?',
       'options': [
-        '90',
-        '190',
-        '250'
+        '30',
+        '300',
+        '3000',
+        '30000'
+      ],
+      'correctIndex': 3,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Was ist das?',
+      'imageSrc': 'https://user-images.githubusercontent.com/10799507/184659855-0f663b25-3226-49ef-8dd3-b90edd101dff.jpg',
+      'imageWidth': 300,
+      'options': [
+        'Ringelblume',
+        'Aster',
+        'Geranie'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Richtig :)',
+      'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
+    },
+    {
+      'q': 'Welche dieser Pflanzen hilft gegen Mücken?',
+      'options': [
+        'Kamille',
+        'Flieder',
+        'Rosmarin'
       ],
       'correctIndex': 2,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Welcher der folgenden Tänze stammt nicht aus Lateinamerika?',
+      'q': 'Was ist aus gärtnerischer Sicht kein Obst?',
       'options': [
-        'Rumba',
-        'Cha-Cha-Cha',
-        'Polka'
+        'Weintrauben',
+        'Kirschen',
+        'Kürbis'
       ],
       'correctIndex': 2,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Links rückwärts, rechts zur Seite, links heranschließen, rechts vorwärts, links zur Seite, rechts heranschließen. Wenn die Dame diese Schritte macht, tanzt sie ...',
+      'q': 'Welche Pflanze wächst am schnellsten?',
       'options': [
-        'Foxtrott',
-        'Walzer',
-        'Tango'
+        'Bambus',
+        'Kirschlorbeer',
+        'Rose'
       ],
-      'correctIndex': 1,
+      'correctIndex': 0,
       'correctResponse': 'Richtig :)',
       'incorrectResponse': 'Oh no. Dr. Laurita hätte das gewusst!'
     },
     {
-      'q': 'Was versteht man im Ballett unter Plié?',
+      'q': 'Welche Pflanze trägt diese außergewöhnlichen Blüten?',
+      'imageSrc': 'https://user-images.githubusercontent.com/10799507/185610353-af0bd95e-2221-4d57-982b-277fabc23682.jpg',
+      'imageWidth': 300,
       'options': [
-        'Kniebeugen',
-        'Pirouetten',
-        'Posieren auf einem Bein'
+        'Akelei',
+        'Storchschnabel',
+        'Kapuzinerkresse'
       ],
       'correctIndex': 0,
       'correctResponse': 'Richtig :)',
